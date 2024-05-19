@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hw js 11</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section class="gallery-section">
+      <span class="loader is-hidden"></span>
+      <div class="container">
+        <form class="search-form" name="searchImageForm">
+          <div class="input-search-form">
+            <input
+              class="input-search"
+              type="text"
+              name="searchImages"
+              required
+              placeholder="Search images..."
+            />
+            <button class="btn-search" type="submit">Search</button>
+          </div>
+        </form>
+      </div>
+      <ul class="gallery"></ul>
+    </section>
+
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./js/pixabay-api.js"></script>
+    <script type="module" src="./js/render-functions.js"></script>
+  </body>
+</html>
