@@ -34,6 +34,7 @@ async function onBtnSubmit(event) {
   }
 
   galleryEl.innerHTML = '';
+  page = 1;
   loader.classList.remove('is-hidden');
 
   try {
@@ -128,7 +129,7 @@ async function onBtnLoadMoreClick(event) {
       iziToast.show({
         message: `'We're sorry, but you've reached the end of search results.'`,
         position: 'topRight',
-        timeout: 2000,
+        timeout: 5000,
         color: 'green',
       });
     }
