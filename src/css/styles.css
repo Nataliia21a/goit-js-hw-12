@@ -109,6 +109,29 @@
   align-self: center;
 }
 
+.btn-load-more {
+  border-radius: 8px;
+  padding: 8px 16px;
+  /* width: px; */
+  height: 40px;
+  background: #4e75ff;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 @keyframes prixClipFix {
   0% {
     clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
