@@ -64,6 +64,16 @@ async function onBtnSubmit(event) {
       btnLoadMoreEl.classList.remove('is-hidden');
     }
 
+    if (page >= totalPages) {
+      btnLoadMoreEl.classList.add('is-hidden');
+      iziToast.show({
+        message: `'We're sorry, but you've reached the end of search results.'`,
+        position: 'topRight',
+        timeout: 2000,
+        color: 'green',
+      });
+    }
+
     const galleryLightBox = new SimpleLightbox('.gallery a', {
       captions: true,
       captionsData: 'alt',
@@ -129,7 +139,7 @@ async function onBtnLoadMoreClick(event) {
       iziToast.show({
         message: `'We're sorry, but you've reached the end of search results.'`,
         position: 'topRight',
-        timeout: 5000,
+        timeout: 2000,
         color: 'green',
       });
     }
